@@ -10,11 +10,10 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import nltk
 from collections import Counter
 from typing import List
-# import nltk
-# nltk.download('punkt')
 
-# import nltk
-# nltk.download('punkt_tab')
+import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 import re
 import string
