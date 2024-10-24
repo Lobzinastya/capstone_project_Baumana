@@ -1,0 +1,19 @@
+# Игнорирование виртуальных окружений
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Игнорирование байт-кода Python
+__pycache__/
+*.py[cod]
+
+# Игнорирование файлов IDE
+.idea/
+*.iml
+*.pydevproject
+.vscode/
+*.sublime-workspace
+*.sublime-project
