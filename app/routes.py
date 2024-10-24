@@ -8,11 +8,11 @@ main = Blueprint('main', __name__)
 
 #Загрузка модели
 best_model = FullWordLM_LSTM(hidden_dim=256, num_classes=4, vocab_size=30004, aggregation_type='max').to('cpu')
-save_path = r'models\best_model.pt'
+save_path = 'models/best_model.pt'
 best_model.load_state_dict(torch.load(save_path, weights_only=True, map_location='cpu'))
 best_model.eval()
 #Загрузка словарей
-with open(r'models\data_for_model.pkl', 'rb') as f:
+with open('models/data_for_model.pkl', 'rb') as f:
     loaded_data = pickle.load(f)
 word2ind = loaded_data['word2ind']
 labels_dict = loaded_data['labels_dict']
