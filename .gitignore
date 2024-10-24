@@ -17,3 +17,6 @@ __pycache__/
 .vscode/
 *.sublime-workspace
 *.sublime-project
+
+# Игнорирование Jupyter Notebook чекпоинтов
+.ipynb_checkpoints/
